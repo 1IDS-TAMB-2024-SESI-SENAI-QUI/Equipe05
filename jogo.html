@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Ácidos, Sais e Bases</title>
+    <link rel="stylesheet" href="jogo2.css">
+</head>
+<body>
+    <h1>Quiz de Ácidos, Sais e Bases</h1>
+    <div class="quiz-container">
+        <div class="question">
+            <p>1. Qual dos seguintes compostos é um ácido?</p>
+            <div class="option" onclick="checkAnswer(this, true)">HCl</div>
+            <div class="option" onclick="checkAnswer(this, false)">NaOH</div>
+            <div class="option" onclick="checkAnswer(this, false)">KCl</div>
+        </div>
+        <div class="question">
+            <p>2. Qual dos seguintes compostos é uma base?</p>
+            <div class="option" onclick="checkAnswer(this, false)">H2SO4</div>
+            <div class="option" onclick="checkAnswer(this, true)">NaOH</div>
+            <div class="option" onclick="checkAnswer(this, false)">CO2</div>
+        </div>
+        <div class="question">
+            <p>3. Qual dos seguintes compostos é um sal?</p>
+            <div class="option" onclick="checkAnswer(this, false)">HCl</div>
+            <div class="option" onclick="checkAnswer(this, false)">NaOH</div>
+            <div class="option" onclick="checkAnswer(this, true)">NaCl</div>
+        </div>
+		<div class="question">
+            <p>4. Qual das seguintes opções é uma característica comum dos ácidos graxos?</p>
+            <div class="option" onclick="checkAnswer(this, false)">Possuem sabor doce</div>
+            <div class="option" onclick="checkAnswer(this, false)">Mudam a cor do papel de tornassol para azul</div>
+            <div class="option" onclick="checkAnswer(this, true)">Produzem íons H⁺ em solução úmida</div>
+			<div class="option" onclick="checkAnswer(this, false)">São bons condutores de eletricidade no estado sólido</div>
+        </div>
+		<div class="question">
+            <p>5. Qual é a definição de uma base de acordo com a teoria de Arrhenius?</p>
+            <div class="option" onclick="checkAnswer(this, false)">Substância que libera íons H⁺ em água</div>
+            <div class="option" onclick="checkAnswer(this, true)">Substância que libera íons OH⁻ em água</div>
+            <div class="option" onclick="checkAnswer(this, false)">Substância que reage com sais</div>
+			<div class="option" onclick="checkAnswer(this, false)">Substância que neutraliza os ácidos</div>
+        </div>
+		<div class="question">
+            <p>6. Qual das seguintes substâncias é um exemplo de sal?</p>
+            <div class="option" onclick="checkAnswer(this, false)">HCl</div>
+            <div class="option" onclick="checkAnswer(this, false)">NaOH</div>
+            <div class="option" onclick="checkAnswer(this, true)">NaCl</div>
+			<div class="option" onclick="checkAnswer(this, false)">H₂O</div>
+        </div>
+		<div class="question">
+            <p>7. O que ocorre em uma ocorrência de neutralização entre um ácido e uma base?</p>
+            <div class="option" onclick="checkAnswer(this, true)">Formação de água e um sal</div>
+            <div class="option" onclick="checkAnswer(this, false)">Liberação de gás oxigênio</div>
+            <div class="option" onclick="checkAnswer(this, false)">Formação de um precipitado insolúvel</div>
+			<div class="option" onclick="checkAnswer(this, false)">Elevação do pH</div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(element, isCorrect) {
+            if (isCorrect) {
+                element.style.backgroundColor = "#a0e7a0"; // Verde para correto
+                element.innerText += " ✓";
+            } else {
+                element.style.backgroundColor = "#e7a0a0"; // Vermelho para incorreto
+                element.innerText += " ✗";
+            }
+        }
+    </script>
+</body>
+</html>
